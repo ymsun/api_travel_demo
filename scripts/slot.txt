@@ -1,0 +1,7 @@
+
+#type||intro||*size
+image||indextop
+image||indexbottom||200x200
+text||magtop
+
+

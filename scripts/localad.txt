@@ -1,0 +1,63 @@
+#image||slot||url||title||imageurl||text
+
+#index top
+image||indextop||http://www.in1001.com/magazine/detail/383||拾梦法兰西||http://img.in1001.com/upload/20120706/ad_indextop_1.jpg||天使爱美丽降临之地
+image||indextop||http://www.in1001.com/magazine/detail/377||斯德哥尔摩速览||http://img.in1001.com/upload/20120706/ad_indextop_2.jpg||波罗的海旁的浮光掠影
+image||indextop||http://www.in1001.com/magazine/detail/371||与危险共舞||http://img.in1001.com/upload/20120706/ad_indextop_3.jpg||旅行：勇敢者的人生游戏
+image||indextop||http://www.in1001.com/magazine/detail/373||十日游缅甸||http://img.in1001.com/upload/20120706/ad_indextop_4.jpg||还未离开已经想念
+image||indextop||http://pub.in1001.com/401/401/web/#p1||吃货行遍中国||http://img.in1001.com/upload/20120706/ad_indextop_5.jpg||成都：味蕾上的鸿篇巨著
+
+#mag page top
+image||magtop||http://pub.in1001.com/403/403/web/#p2||奇趣:世界性文化旅行地||http://img.in1001.com/upload/20120706/ad_mag_top_1.jpg||
+image||magtop||http://pub.in1001.com/407/407/web/||漂流一夏，尽享清凉之旅||http://img.in1001.com/upload/20120706/ad_mag_top_2.jpg||
+image||magtop||http://www.in1001.com/magazine/detail/405||不可思议的马德里||http://img.in1001.com/upload/20120706/ad_mag_top_3.jpg||
+image||magtop||http://www.in1001.com/magazine/detail/409||携手走进浪漫世界—希腊蜜月旅||http://img.in1001.com/upload/20120706/ad_mag_top_4.jpg||
+
+#index find love area
+image||indexlovefind||http://pub.in1001.com/411/411/web/#p2||忘不掉的三亚，玩不够的海边||http://img.in1001.com/upload/20120706/index_love_find_1.jpg||
+image||indexlovefind||http://pub.in1001.com/391/391/web/#p4|| 追随六朝古都的足迹，南京||http://img.in1001.com/upload/20120706/index_love_find_2.jpg||
+image||indexlovefind||http://pub.in1001.com/389/389/web/||毕业后，要去感受的神迹||http://img.in1001.com/upload/20120706/index_love_find_3.jpg|| 
+
+
+
+
+#text||slot||url||title||text
+text||magmiddle||http://pub.in1001.com/316/316/web/||马德里不思议||盼望着，盼望着，马德里越来越近了，这是我曾经梦想要闲逛一个星期的城市，而事实上，我在这里的时间只会有一天半，能怎样呢？我确定，无论如何一定要在马约尔广场喝上一杯。不可思议的广场，不可思议的马德里。
+text||magmiddle||http://pub.in1001.com/315/315/web/||揽翠台北吃货游||有一种说法是：你没有在晚上光顾过台湾的夜市，你就没有真正到过台湾。 在台北，也有这样几条街，一到晚上便是人声鼎沸，灯火通明，整个区域弥漫着食物混杂的香气...好想再去吃啊！
+text||magmiddle||http://pub.in1001.com/322/322/web/||珀斯，西澳的这抹温闲||珀斯，位于澳大利亚西南角的天鹅河畔，号称是澳大利亚最孤独的城市，有广阔的居住空间及高水平的生活质素，于每年的世界最佳居住城市评选中都是名列前茅，跟随我一起去看看吧。
+
+
+#index elem 4
+#elem||slot||url||title||image
+elem||indexelem4||http://pub.in1001.com/387/387/web/#10||丹麦的春天||http://pub.in1001.com/387/387/web/assets/images/p8/0.jpg
+elem||indexelem4||http://pub.in1001.com/375/375/web/#10||勇者的旅行||http://pub.in1001.com/375/375/web/assets/images/p4/0.jpg
+elem||indexelem4||http://pub.in1001.com/389/389/web/#10||毕业季，一起去旅行||http://pub.in1001.com/389/389/web/assets/images/p8/0.jpg
+elem||indexelem4||http://pub.in1001.com/383/383/web/#10||拾梦法兰西||http://pub.in1001.com/383/383/web/assets/images/p8/0.jpg
+
+#index elem 3
+elem||indexelem3||http://pub.in1001.com/381/381/web/#10||二次元旅行||http://pub.in1001.com/381/381/web/assets/images/p10/0.jpg
+elem||indexelem3||http://pub.in1001.com/379/379/web/#10||岛之旅||http://pub.in1001.com/379/379/web/assets/images/p8/0.jpg
+elem||indexelem3||http://pub.in1001.com/377/377/web/#10||北欧之魅||http://pub.in1001.com/377/377/web/assets/images/p8/0.jpg
+
+#index elem 1
+#elem||slot||url||title||image
+elem||indexelem1||http://pub.in1001.com/371/371/web/#10||危险之旅||http://pub.in1001.com/371/371/web/assets/images/p8/0.jpg
+
+
+#index  maga  9
+#elem||slot||url||title||image
+maga||indextop||甩掉酷暑-长滩岛之旅||最浪漫的白沙滩让你甩掉酷暑
+maga||indextop||罪犯流放地变成的自由乐土-澳洲游记||澳洲游记
+maga||indextop||冰岛的那份美丽||冰与火之歌的世界
+maga||indextop||美梦Kapalai卡帕莱一“小猪+LuLu”的蜜月周游||两个人的梦幻蜜月地
+maga||indextop||迷失在古城丽江||玉龙雪山东巴国
+maga||indextop||只愿身在庐山中||圣斗士紫龙修炼的地方
+maga||indextop||梦的开始——南极之旅||终极旅行，梦的开始
+maga||indextop||My上海之旅||重温世博会的那些精彩
+maga||indextop||西塘——我的世界有你一起||雨中静谧的夜色水乡
+
+
+
+# magmiddle   maga type
+maga||magmiddle||冰岛的那份美丽
+maga||magmiddle||山西--辽风晋韵的千年古城

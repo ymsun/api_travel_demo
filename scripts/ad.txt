@@ -1,0 +1,94 @@
+#image||slot||url||title||imageurl||text
+image||indextop||http://www.in1001.com/magazine/detail/109||奥运来了！让奥运吉祥物文洛克带你游伦敦||http://img.in1001.com/upload/20120716/ad_indextop_1.jpg||跟随奥运吉祥物文洛克游玩伦敦，领略伦敦奥运会场馆，欣赏奥运圣火传递的沿途小镇风光，再去魅力都市购物，打造您的英伦范儿。一样的伦敦，一样的奥运，不一样的导游文洛克，带你体验不一样的伦敦奥运之旅||20
+image||indextop||http://www.in1001.com/magazine/detail/33||你不懂90后！90后少年的独身单车骑行西藏||http://img.in1001.com/upload/20120716/ad_indextop_2.jpg||特立独行的90后，如今也已成长。独身单车骑行至西藏。在面对圣洁的布达拉宫的那一刻，在看到连绵不绝的雪山的那一刻，在看到原始淳朴的人情的那一刻，你不懂的90后，用无声的勇气和信念，诠释青春，诠释生命。||19
+image||indextop||http://www.in1001.com/magazine/detail/133||吃货行遍中国之玩弄味蕾的成都||http://img.in1001.com/upload/20120716/ad_indextop_3.jpg||老妈蹄花,天主堂鸡片店,罗妹趴泥鳅; 粉蒸肉,油炸鹌鹑,火锅粉;豆腐串儿,甜皮鸭,串串儿;抄手儿,豆腐脑,凉虾,钵钵鸡,翘脚牛肉……跟着作者一起去成都吧，放开你的禁忌，狠狠地咬一口成都奔放的美食吧||18
+image||indextop||http://www.in1001.com/magazine/detail/29||太空旅行：高富帅都难以企及的旅行高度||http://img.in1001.com/upload/20120716/ad_indextop_4.jpg||i这里是高富帅都难以企及的旅行高度，离开地球的太空旅行，这里有真正的太空行走，你的目的地将是一整个星球。但是，首先，你有多少钱呢||17
+image||indextop||http://www.in1001.com/magazine/detail/163||冰岛之行：冰火两重天||http://img.in1001.com/upload/20120716/ad_indextop_5.jpg||在冰岛这个黑与白的世界，冰与火的世界，却有着还有一个可以治愈失恋的小镇，那里静默的彷佛时间都已停止。就是这里，就是冰岛，把前来的旅行者包裹在一片安宁中，恍若隔世||16
+
+
+
+image||magtop||http://www.in1001.com/magazine/detail/129||清凉一夏：防暑降温，漂了个流||http://img.in1001.com/upload/20120716/ad_mag_top_1.jpg||||19
+image||magtop||http://www.in1001.com/magazine/detail/123||艳遇之旅：路边有风景，艳遇请随意||http://img.in1001.com/upload/20120716/ad_mag_top_2.jpg||||18
+image||magtop||http://www.in1001.com/magazine/detail/89||深览：你的身周是一片巨大的蓝||http://img.in1001.com/upload/20120716/ad_mag_top_3.jpg||||17
+image||magtop||http://www.in1001.com/magazine/detail/93||呼伦贝尔：“只身打马过草原”||http://img.in1001.com/upload/20120716/ad_mag_top_4.jpg||||16
+
+
+
+#index find love area
+image||indexlovefind||http://pub.in1001.com/161/161/web/#p2||澳门美食评测游记:澳门美食三级游||http://img.in1001.com/upload/20120716/index_love_find_1.jpg||||20
+image||indexlovefind||http://pub.in1001.com/7/7/web/#p9||天工奇迹：挪威布道石和奇迹石||http://img.in1001.com/upload/20120716/index_love_find_2.jpg||||19
+image||indexlovefind||http://pub.in1001.com/97/97/web/#p11||世界上最纯粹的海岛：大溪地||http://img.in1001.com/upload/20120716/index_love_find_3.jpg||||18
+image||indexlovefind||http://pub.in1001.com/23/23/web/#p3||小清新的旅游圣地：青海湖||http://img.in1001.com/upload/20120716/index_love_find_4.jpg||||18
+
+
+
+
+#text||slot||url||title||text
+text||magmiddle||http://www.in1001.com/magazine/detail/13||漂流一夏，一叶轻舟变烈马||这个夏天，对酷热说不！燥热难耐的时候，将手指向蜿蜒曲折的河道——武夷山最美溪，华夏第一白水溪，凤凰经典漂，杭州双溪经典漂……各种清凉，各种轻爽！漂流湿身，激情四射，每天一条劲浪正能量，总有一款适合你！||20
+text||magmiddle||http://www.in1001.com/magazine/detail/159||艳遇之城：最牛泡妞路线指南||艳遇向左，暖昧向右。红尘醉凤凰，艳遇在丽江，迷失在乌镇，相见再相忘……蠢蠢欲动的心期待艳遇,为您提供最牛艳遇路线，路边的风景，等着你去寻找，去相遇。||19
+text||magmiddle||http://www.in1001.com/magazine/detail/27||深览：一头栽进这一片巨蓝||法国著名导演吕克贝松有一部非常有深度的作品--"big blue"（碧海情天）。写的是一个将生命溶于海洋的热爱潜水的少年的故事。那么，在这一片静谧的蓝色世界里，到底是什么景色让人们如此魂牵梦绕呢？||18
+
+
+#index elem 9
+#elem||slot||url||title||image
+elem||indexelem4||http://pub.in1001.com/1/1/web/#p17||长滩岛浮潜与海龟共舞||http://pub.in1001.com/1/1/web/assets/images/p16/1.jpg||6997||1
+elem||indexelem4||http://pub.in1001.com/97/97/web/#p11||大溪地的人民不穿衣||http://pub.in1001.com/97/97/web/assets/images/p9/0.jpg||15603||2
+elem||indexelem4||http://pub.in1001.com/157/157/web/#p14||德国人在青岛留下了什么？||http://pub.in1001.com/157/157/web/assets/images/p12/0.jpg||20819||3
+elem||indexelem4||http://pub.in1001.com/159/159/web/#p5||去台北喝波霸奶茶||http://pub.in1001.com/159/159/web/assets/images/p3/0.jpg||20987||4
+elem||indexelem4||http://pub.in1001.com/15/15/web/#p12||缅甸的僧侣多自由||http://pub.in1001.com/15/15/web/assets/images/p10/0.thumb.jpg||8141||5
+elem||indexelem4||http://pub.in1001.com/75/75/web/#p2||认识他吗？真相只有一个！||http://pub.in1001.com/75/75/web/assets/images/p1/0.jpg||13473||6
+elem||indexelem4||http://pub.in1001.com/149/149/web/#p9||在武当金顶寻找张三丰||http://pub.in1001.com/149/149/web/assets/images/p7/0.jpg||20129||7
+elem||indexelem4||http://pub.in1001.com/3/3/web/#p10||南极的企鹅与座头鲸||http://pub.in1001.com/3/3/web/assets/images/p5/0.jpg||7065||8
+elem||indexelem4||http://pub.in1001.com/67/67/web/#p19||澳大利亚的心形珊瑚礁||http://pub.in1001.com/67/67/web/assets/images/p0/0.jpg||12579||9
+
+
+#elem||indexelem4||http://pub.in1001.com/id/id/web/#p14||*||http://pub.in1001.com/id/id/web/assets/images/p+/0.jpg||=||2
+
+
+#index  maga  9
+#maga||slot||title||text||id
+# title 为自定义标题
+maga||indextop||毕业旅行||撅起青春的尾巴准备上路||87||1
+maga||indextop||性文化之旅||去了就让你心惊肉跳||57||2
+maga||indextop||爱之私领域||蜜月必去的浪漫天堂||67||3
+maga||indextop||勇敢者之路||为了旅行我愿意去冒险||25||4
+maga||indextop||去西藏||在世界末日之前寻找诺亚方舟||79||5
+maga||indextop||进南极||体验世界尽头的终极之美||3||6
+maga||indextop||法兰西||拾梦天使爱美丽降临之地||103||7
+maga||indextop||越南越美||越南深度伤感游记连载||65||8
+maga||indextop||最近的海||北京上班族最方便看海处||51||9
+
+
+# magmiddle   maga type
+maga||magmiddle||呼伦贝尔，这一片不真实的草原之旅||||93||20
+maga||magmiddle||长滩岛，酷夏里最适合去的海边||||1||19
+
+# guessulove  maga type
+# type||slot||title||intro||id||weight
+maga||guessulove||||||133||20
+maga||guessulove||||||65||20
+maga||guessulove||||||37||20
+maga||guessulove||||||63||20
+maga||guessulove||||||159||20
+maga||guessulove||||||27||20
+maga||guessulove||||||93||20
+maga||guessulove||||||163||20
+maga||guessulove||||||3||20
+maga||guessulove||||||33||20
+maga||guessulove||||||13||20
+maga||guessulove||||||49||20
+maga||guessulove||||||119||20
+maga||guessulove||||||55||20
+maga||guessulove||||||79||20
+
+
+
+# /find page
+elem||findpage||http://pub.in1001.com/57/57/web/#p6||||http://pub.in1001.com/57/57/web/assets/images/p7/1.thumb.jpg||11797||8
+elem||findpage||http://pub.in1001.com/37/37/web/#p2||||http://pub.in1001.com/37/37/web/assets/images/p8/1.jpg||9999||7
+elem||findpage||http://pub.in1001.com/125/125/web/#p7||||http://pub.in1001.com/125/125/web/assets/images/p6/0.jpg||17899||6
+elem||findpage||http://pub.in1001.com/15/15/web/#p7||||http://pub.in1001.com/15/15/web/assets/images/p5/0.jpg||8079||5
+elem||findpage||http://pub.in1001.com/17/17/web/#p9||||http://pub.in1001.com/17/17/web/assets/images/p7/0.jpg||8251||4
+elem||findpage||http://pub.in1001.com/83/83/web/#p8||||http://pub.in1001.com/83/83/web/assets/images/p8/0.jpg||14081||3
+elem||findpage||http://pub.in1001.com/11/11/web/#p13||||http://pub.in1001.com/11/11/web/assets/images/p13/0.jpg||7933||2
+elem||findpage||http://pub.in1001.com/141/141/web/#p2||||http://pub.in1001.com/141/141/web/assets/images/p3/0.jpg||19257||1
