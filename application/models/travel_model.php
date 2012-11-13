@@ -275,7 +275,8 @@ class Travel_Model extends Tra_db {
 			$this->db->insert('target_food', $data);
 		}	
 	}
-	function update_restaurants($handle){
+	function update_restaurants($handle){ // {{{
+		exit('程序已经被停止');
 		foreach($handle as $key => $value){
 			$sql = 'select id, name from procity where pid !=0 and name like"%'.$key.'%"';
 			$pres = $this->db->query($sql)->row_array();
@@ -284,21 +285,45 @@ class Travel_Model extends Tra_db {
 				if($type == 'food')
 					foreach($v as $k =>$content){
 						$sqlre = 'select id, grade from restaurants where city_id='.$id.' and (cuisines like"%'.$content.'%" or recommend_foods like "%'.$content.'%")';
-						$res = $this->db->query($sqlre)->row_array();
-						$restaurants_id = $res['id'];		
-						$grade = $res['grade'];		
-						echo $type;
-						echo $id;
+						$res = $this->db->query($sqlre)->result_array();
+						if($res){
+							foreach($res as $kel => $vl){
+								$restaurants_id = $vl['id'];		
+								$grade = $vl['grade'];		
+								$data = array(
+											'restaurants_id' => $restaurants_id,
+											'city_id' => $id,
+											'name' => $content,
+											'type' => $type,
+											'grade' => $grade,
+										);
+								$this->db->insert('target_restaurants', $data);
+							}
+						}
 					}
 				if($type == 'places'){
 					foreach($v as $k =>$content){
-						$sqlre = 'select id, grade from restaurants where city_id='.$id.' and com_circle like"%'.$content.'%"';
-						$res = $this->db->query($sqlre)->row_array();
-						$restaurants_id = $res['id'];		
-						$grade = $res['grade'];		
+						$sqlre = 'select id, grade from restaurants where city_id='.$id.' and comm_circle like"%'.$content.'%"';
+						$res = $this->db->query($sqlre)->result_array();
+						if($res){
+							foreach($res as $kel => $vl){
+								$restaurants_id = $vl['id'];		
+								$grade = $vl['grade'];		
+								$data = array(
+											'restaurants_id' => $restaurants_id,
+											'city_id' => $id,
+											'name' => $content,
+											'type' => $type,
+											'grade' => $grade,
+										);
+								$this->db->insert('target_restaurants', $data);
+							}
+						}
 					}
 				}
 			}
+			echo $key.'完成<br>';
 		}
-	}
+		echo '结束';
+	}// }}}
 }
