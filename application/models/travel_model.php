@@ -48,12 +48,12 @@ class Travel_Model extends Tra_db {
 	}	
 	function get_arealist($cid,$sl,$ccname=''){
 		if($ccname==''){
-		 $sql = 'SELECT * FROM area_new where cid='.$cid.' and source is not NULL';
-		 $sqlm = 'SELECT * FROM area_new where cid='.$cid.' and source is not NULL LIMIT '.$sl['start'].' ,'.$sl['limit'];
+		 $sql = 'select * from area_new where cid='.$cid.' and source is not null';
+		 $sqlm = 'select * from area_new where cid='.$cid.' and source is not null limit '.$sl['start'].' ,'.$sl['limit'];
 	
 		}else{
-		 $sql = 'SELECT * FROM area_new where source is not NULL and name like "%'.$ccname.'%"';
-		 $sqlm = 'SELECT * FROM area_new where source is not NULL and name like "%'.$ccname.'%" LIMIT '.$sl['start'].' ,'.$sl['limit'];
+		 $sql = 'select * from area_new where source is not null and name like "%'.$ccname.'%"';
+		 $sqlm = 'select * from area_new where source is not null and name like "%'.$ccname.'%" limit '.$sl['start'].' ,'.$sl['limit'];
 		}
 		$query = $this->db->query($sql);
 		$num = $query->num_rows();
@@ -61,7 +61,27 @@ class Travel_Model extends Tra_db {
 		//$pres = $this->db->get_where('area_new',array('cid'=>$cid),$sl['limit'],$sl['start']);
 		$ret['kind'] = "travel#travel";
 		$ret['rows'] = $num;
-		$ret['totalResults'] = $pres->num_rows;
+		$ret['totalresults'] = $pres->num_rows;
+		$ret['start'] = '0';
+		$filt = array(
+			'click',
+			'update_at',
+			'done',
+			);
+		$ret['items'] =$this->clean_fields($pres->result_array(),$filt);
+		$ret['items'] = $this->get_lgt($ret['items']);
+		return $ret;
+	}	
+	function get_newarealist($cid,$sl){
+		$sql = 'select * from attractions where city_id='.$cid;
+		$sqlm = 'select * from attractions where city_id='.$cid;
+	 	$query = $this->db->query($sql);
+		$num = $query->num_rows();
+		$pres = $this->db->query($sqlm);
+		//$pres = $this->db->get_where('area_new',array('cid'=>$cid),$sl['limit'],$sl['start']);
+		$ret['kind'] = "travel#travel";
+		$ret['rows'] = $num;
+		$ret['totalresults'] = $pres->num_rows;
 		$ret['start'] = '0';
 		$filt = array(
 			'click',
@@ -326,4 +346,41 @@ class Travel_Model extends Tra_db {
 		}
 		echo '结束';
 	}// }}}
+	function get_targetrestaurants($table, $type, $keyword,$city_id){// {{{
+		$where = 'type = "'.$type.'" and city_id="'.$city_id.'" and name="'.$keyword.'"';
+		$pres = $this->db
+				->from($table)
+				->where($where)
+				->order_by('grade','desc')
+				->get()
+				->result_array();
+		$filt = array(
+			'id',
+			'name',
+			'city_id',
+			'name',
+			'choose',
+			'type',
+			'grade',
+			);
+		$pres =$this->clean_fields($pres,$filt);
+		$pres =$this->change_str($pres,'restaurants_id');
+		$result = $this->db
+					   ->from('restaurants')
+					   ->where_in('id',$pres)
+					   ->order_by('field',$pres);
+		print_r($result->get()->result_array());
+	}//	}}}
+	function get_jieimglist($id){
+		$pres = $this->db->get_where('place_photos',array('place_id'=>$id));
+		$ret['kind'] = "travel#travel";
+		$ret['totalResults'] = $pres->num_rows;
+		$ret['start'] = '0';
+		$ret['items'] = $pres->result_array();
+		return $ret;
+	}
+	function set_jieimg($id,$choose){
+		$pres = $this->db->update('place_photos',array('choose'=>$choose),array('id'=>$id));
+		return $pres;
+	}
 }

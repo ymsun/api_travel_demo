@@ -73,17 +73,22 @@ $route['province/(:num)/cities'] = 'travel/citylist/$1';
 $route['search'] = 'travel/search';
 $route['getid'] = 'travel/getid';
 $route['city/(:num)/areas/(:num)'] = 'travel/arealist/$1/$2';
+$route['city/(:num)/newareas/(:num)'] = 'travel/newarealist/$1/$2';
 $route['area/(:num)'] = 'travel/area/$1';
 $route['area/(:num)/scenics'] = 'travel/sceniclist/$1';
 $route['scenic/(:num)'] = 'travel/scenic/$1';
 $route['scenic/(:num)/points'] = 'travel/pointlist/$1';
 $route['getpidbycid/(:num)'] = 'travel/getpidbycid/$1';
 $route['city'] = 'travel/imagecity';
+
 $route['images'] = 'travel/imagelist';
 $route['images/city'] = 'travel/imagelist';
 $route['images/keyword'] = 'travel/keyword';
 $route['images/setimage'] = 'travel/setimages';
 $route['images/setwrite'] = 'travel/setwrite';
+
+$route['jiepangimg'] = 'travel/get_jieimg';
+$route['setjieimg'] = 'travel/set_jieimg';
 
 $route['hotel/(:num)'] = 'travel/hotellist/$1';
 $route['hotel/(:num)/page/(:num)'] = 'travel/hotellist/$1/$2';
@@ -94,4 +99,5 @@ $route['restaurants/(:num)/page/(:num)'] = 'travel/restaurants/$1/$2';
 $route['restimages/(:num)'] = 'travel/restimages/$1';
 $route['lll'] = 'travel/lll';
 $route['insert'] = 'travel/insertfood';
+$route['ceshi'] = 'travel/get_ceshi';
 

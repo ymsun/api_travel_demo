@@ -30,6 +30,10 @@ class Tra_db extends CI_Model {
 				->result_array();
 		return $result;
 	}	//}}jW}
-
-
+    function get_in_orderby_str_for_values($field, $values) {
+	    $vstr = "'" . implode("','", $values) . "'";
+		$in_str = "$field IN ($vstr)";
+		$orderby_str = "FIELD ($field, $vstr)";
+		return array($in_str, $orderby_str);
+	}
 }

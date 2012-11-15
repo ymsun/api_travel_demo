@@ -76,6 +76,11 @@ class Travel extends MY_Controller {
 		$arealist = $this->travel_model->get_arealist($cid,$sl);
 		$this->_json_output($arealist);
 	}
+	function newarealist($cid,$page=0){		
+		$sl = $this->_getsl($page);
+		$arealist = $this->travel_model->get_newarealist($cid,$sl);
+		$this->_json_output($arealist);
+	}
 	function area($aid){		
 		$area= $this->travel_model->get_area($aid);
 		$this->_json_output($area);
@@ -193,4 +198,21 @@ class Travel extends MY_Controller {
 		}*/
 		$restimages = $this->travel_model->update_restaurants($handle);
 	}
+	function get_ceshi(){
+		$keyword = isset($_GET['keyword'])?$_GET['keyword']:'';
+		$foodtype = isset($_GET['foodtype'])?$_GET['foodtype']:'';
+		$cityid = isset($_GET['cityid'])?$_GET['cityid']:'';
+		$this->travel_model->get_targetrestaurants('target_restaurants',$foodtype,$keyword, $cityid);
+	}
+	function get_jieimg(){
+		$id = isset($_GET['id'])?$_GET['id']:'';
+		$pres = $this->travel_model->get_jieimglist($id);
+		$this->_json_output($pres);
+	}	
+	function set_jieimg(){
+		$id = isset($_GET['id'])?$_GET['id']:'';
+		$choose = isset($_GET['statue'])?$_GET['statue']:'';
+		$pres = $this->travel_model->set_jieimg($id,$choose);
+		$this->_json_output($pres);
+	}	
 }
