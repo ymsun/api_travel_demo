@@ -215,4 +215,9 @@ class Travel extends MY_Controller {
 		$pres = $this->travel_model->set_jieimg($id,$choose);
 		$this->_json_output($pres);
 	}	
+	function foodimg($cid){
+		$keyword = isset($_GET['keyword'])?$_GET['keyword']:'';
+		$pres = $this->travel_model->get_foodimg($cid,$keyword);
+		$this->_json_output($pres);
+	}
 }

@@ -383,4 +383,12 @@ class Travel_Model extends Tra_db {
 		$pres = $this->db->update('place_photos',array('choose'=>$choose),array('id'=>$id));
 		return $pres;
 	}
+	function get_foodimg($cid,$keyword){
+		$pres = $this->db->get_where('target_food',array('city_id'=>$cid,'keyword'=>$keyword));
+		$ret['kind'] = "travel#travel";
+		$ret['totalResults'] = $pres->num_rows;
+		$ret['start'] = '0';
+		$ret['items'] = $pres->result_array();
+		return $ret; 
+	}
 }

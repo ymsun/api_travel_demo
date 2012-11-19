@@ -96,6 +96,7 @@ $route['hotelimages/(:num)'] = 'travel/hotelimages/$1';
 
 $route['restaurants/(:num)'] = 'travel/restaurants/$1';
 $route['restaurants/(:num)/page/(:num)'] = 'travel/restaurants/$1/$2';
+$route['foodimg/(:num)'] = 'travel/foodimg/$1';
 $route['restimages/(:num)'] = 'travel/restimages/$1';
 $route['lll'] = 'travel/lll';
 $route['insert'] = 'travel/insertfood';
