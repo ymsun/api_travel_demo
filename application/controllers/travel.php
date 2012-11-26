@@ -185,7 +185,7 @@ class Travel extends MY_Controller {
 		$restimages = $this->travel_model->update_targetfood($city);
 	}
 	function insertfood(){
-		require_once('b.php');
+		require_once('tage.php');
 		$city = array();
 		/*
 		foreach($handle as $key =>$value){
@@ -196,7 +196,7 @@ class Travel extends MY_Controller {
 			$city[$key]['places'] = implode(',',$value['places']);	
 			}
 		}*/
-		$restimages = $this->travel_model->update_restaurants($handle);
+		$restimages = $this->travel_model->update_restaurants($tage);
 	}
 	function get_ceshi(){
 		$keyword = isset($_GET['keyword'])?$_GET['keyword']:'';

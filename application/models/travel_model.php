@@ -210,22 +210,22 @@ class Travel_Model extends Tra_db {
 	function get_restaurants($cid,$sl,$foodtype,$keyword){
 		if($foodtype && $keyword){
 			if($foodtype=='cuisines'){
-			$sql1 = 'select * from restaurants where city_id ='.$cid.' and (cuisines like "%'.$keyword.'%" or recommend_foods like "%'.$keyword.'%" or name like"%'.$keyword.'%" or subname like "%'.$keyword.'%" or feature like "%'.$keyword.'%") order by grade desc';
+			$sql1 = 'select * from restaurants where city_id ='.$cid.'and (lat is not null or blat is not null or glat is not null) and (cuisines like "%'.$keyword.'%" or recommend_foods like "%'.$keyword.'%" or name like"%'.$keyword.'%" or subname like "%'.$keyword.'%" or feature like "%'.$keyword.'%") order by grade desc';
 			}else{
-			$sql1 = 'select * from restaurants where city_id ='.$cid.' and comm_circle like "%'.$keyword.'%" order by grade desc';
+			$sql1 = 'select * from restaurants where city_id ='.$cid.'and (lat is not null or blat is not null or glat is not null) and comm_circle like "%'.$keyword.'%" order by grade desc';
 			}
 		}else{
-			$sql1 = 'select * from restaurants where city_id ='.$cid.' order by grade desc';
+			$sql1 = 'select * from restaurants where city_id ='.$cid.' and (lat is not null or blat is not null or glat is not null) order by grade desc';
 		}
 
 		if($foodtype && $keyword){
 			if($foodtype=='cuisines'){
-			$sql = 'select * from restaurants where city_id ='.$cid.' and (cuisines like "%'.$keyword.'%" or recommend_foods like "%'.$keyword.'%" or name like"%'.$keyword.'%" or subname like "%'.$keyword.'%" or feature like "%'.$keyword.'%") order by grade desc limit '.$sl['start'].','.$sl['limit'];
+			$sql = 'select * from restaurants where city_id ='.$cid.' and (lat is not null or blat is not null or glat is not null) and (cuisines like "%'.$keyword.'%" or recommend_foods like "%'.$keyword.'%" or name like"%'.$keyword.'%" or subname like "%'.$keyword.'%" or feature like "%'.$keyword.'%") order by grade desc limit '.$sl['start'].','.$sl['limit'];
 			}else{
-			$sql = 'select * from restaurants where city_id ='.$cid.' and comm_circle like "%'.$keyword.'%" order by grade desc limit '.$sl['start'].','.$sl['limit'];
+			$sql = 'select * from restaurants where city_id ='.$cid.' and (lat is not null or blat is not null or glat is not null) and comm_circle like "%'.$keyword.'%" order by grade desc limit '.$sl['start'].','.$sl['limit'];
 			}
 		}else{
-			$sql = 'select * from restaurants where city_id ='.$cid.' order by grade desc limit '.$sl['start'].','.$sl['limit'];
+			$sql = 'select * from restaurants where city_id ='.$cid.' and (lat is not null or blat is not null or glat is not null) order by grade desc limit '.$sl['start'].','.$sl['limit'];
 		}
 		//$pres = $this->db->get_where('restaurants like',array('city_id'=>$cid),$sl['limit'],$sl['start']);
 		$query1 = $this->db->query($sql1);
@@ -296,15 +296,19 @@ class Travel_Model extends Tra_db {
 		}	
 	}
 	function update_restaurants($handle){ // {{{
-		exit('程序已经被停止');
+		exit('程序已关闭');
 		foreach($handle as $key => $value){
 			$sql = 'select id, name from procity where pid !=0 and name like"%'.$key.'%"';
 			$pres = $this->db->query($sql)->row_array();
 			$id = $pres['id'];		
+			$cityname = $pres['name'];		
 			foreach($value as $type => $v){
-				if($type == 'food')
+				if($type == 'food'){
 					foreach($v as $k =>$content){
-						$sqlre = 'select id, grade from restaurants where city_id='.$id.' and (cuisines like"%'.$content.'%" or recommend_foods like "%'.$content.'%")';
+						$sqlq = 'select id from target_food where name="'.$k.'" and city_id='.$id;
+						$qres = $this->db->query($sqlq)->row_array();
+						$target_id = $qres['id'];		
+						$sqlre = 'select id, grade from restaurants where city_id='.$id.' and (cuisines like"%'.$content.'%" or recommend_foods like "%'.$content.'%" or name like"%'.$content.'%")';
 						$res = $this->db->query($sqlre)->result_array();
 						if($res){
 							foreach($res as $kel => $vl){
@@ -312,15 +316,15 @@ class Travel_Model extends Tra_db {
 								$grade = $vl['grade'];		
 								$data = array(
 											'restaurants_id' => $restaurants_id,
-											'city_id' => $id,
-											'name' => $content,
-											'type' => $type,
+											'target_id' => $target_id,
 											'grade' => $grade,
 										);
 								$this->db->insert('target_restaurants', $data);
 							}
 						}
 					}
+				}
+				/*
 				if($type == 'places'){
 					foreach($v as $k =>$content){
 						$sqlre = 'select id, grade from restaurants where city_id='.$id.' and comm_circle like"%'.$content.'%"';
@@ -340,7 +344,7 @@ class Travel_Model extends Tra_db {
 							}
 						}
 					}
-				}
+				}*/
 			}
 			echo $key.'完成<br>';
 		}
